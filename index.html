@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ShopSnowboards</title>
+    <link rel="icon" type="image/png" href="img/snowicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="cards.js" defer></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+                <ul class="nav__list">
+                    <div class="nav__hidden">
+                        <li>
+                            <a class="nav__link" href="#">Главная
+                            </a>
+                        </li>
+                        <li>                            
+                            <a class="nav__link" href="#footer">Контакты
+                            </a>
+                        </li>
+                        <li class="nav__dropdown">Типы СНОУБОРДОВ
+                            <ul class="dropdown">
+                                <li><a class="dropdown__link" href="">Мужские</a></li>
+                                <li><a class="dropdown__link" href="">Женские</a></li>
+                                <li><a class="dropdown__link" href="">Детские</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="name">Поиск</label>
+                            <input class="nav__input" type="text" placeholder="Введите название сноуборда">
+                        </li>
+                    </div>
+                    <li class="basket">Корзина</li>
+                    <li class="nav__cards">
+                        
+                    </li>
+                    <li class="burger"></li>
+                </ul>
+        </div>
+</nav>
+<nav class="menu">
+    <ul class="menu__list">
+        <li>
+            <a class="nav__link" href="#">Главная
+            </a>
+        </li>
+        <li>                            
+            <a class="nav__link" href="#footer">Контакты
+            </a>
+        </li>
+        <li class="nav__dropdown">Типы СНОУБОРДОВ
+            <ul class="dropdown">
+                <li><a class="dropdown__link" href="">Мужские</a></li>
+                <li><a class="dropdown__link" href="">Женские</a></li>
+                <li><a class="dropdown__link" href="">Детские</a></li>
+            </ul>
+        </li>
+        <li>
+            <input class="nav__input" type="text">
+        </li>
+    </ul>
+</nav>
+<section class="shop">
+    <div class="container">
+        <a class="main__link" href="#footer">УЗНАТЬ БОЛЬШЕ</a>
+        <div class="shop__content">
+            <h2>МАГАЗИН СНОУБОРДОВ</h2>
+            <img src="img/snowicon.png" alt="">
+            <p>Сноубо́рд (англ. snowboard, букв. «снежная доска») — спортивный снаряд, предназначенный для спуска с заснеженных склонов и гор. Сноуборд представляет собой многослойную конструкцию (в форме доски с загнутыми торцами, со среднестатистической длиной 140—165 см и шириной примерно с длину ступни райдера) с металлическим кантом по периметру нижней части и креплениями (обычно продаются отдельно) для ног. От монолыж сноуборд отличает стойка райдера: на сноуборде ступни направлены (в той или иной степени) поперёк доски, в монолыже — вдоль. Так же необходимым оборудованием для сноубордов являются сноубордические ботинки.</p>
+        </div>
+        <div class="flex">
+            <div class="flex__item">
+                <div class="flex__img flex__img_bg1">
+                    <div class="flex__over">
+                        <a class="flex__link" href="#">КУПИТЬ</a>
+                    </div>
+                </div>
+                <h3>МУЖСКИЕ СНОУБОРДЫ</h3>
+            </div>
+            <div class="flex__item">
+                <div class="flex__img flex__img_bg2"> 
+                    <div class="flex__over">
+                        <a class="flex__link" href="#">КУПИТЬ</a>
+                    </div>
+                </div>
+                <h3>ЖЕНСКИЕ СНОУБОРДЫ</h3>
+            </div>
+            <div class="flex__item">
+                <div class="flex__img flex__img_bg3"> 
+                    <div class="flex__over">
+                        <a class="flex__link" href="#">КУПИТЬ</a>
+                    </div>
+                </div>
+                <h3>ДЕТСКИЕ СНОУБОРДЫ</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="modal">
+    <div class="modal__body">
+        <div class="modal__content">
+            <a class="close__link2" href="#" >
+                <img class="close__link" src="img/delete.png" alt="">
+            </a>
+            <table>
+                <thead>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>count</th>
+                    <th>price</th>
+                    <th>total</th>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+            <form action="">
+                <button>Отправить</button>
+                <button class="delete__shopCart">Очистить</button>
+            </form>
+        </div>
+    </div>
+</div>
+<section class="footer" id="footer">
+    <div class="container">
+        <form class="form" action="">
+            <div class="form__item">
+                <input type="text" name="name" placeholder="Ваш телефон">
+                <input type="text" name="phone" placeholder="Ваше имя">
+                <button type="submit">Отправить</button>
+            </div>
+        </form>
+    </div>
+</section>
+    <script src="app.js"></script>
+    <script src="burger.js"></script>
+    <script src="scroll.js"></script>
+    <script src="sendform.js"></script>
+</body>
+</html>
